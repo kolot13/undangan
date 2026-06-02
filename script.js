@@ -2,10 +2,10 @@
 // EDIT DATA UNDANGAN DI SINI
 // ================================
 const invitation = {
-  childName: 'Muhammad Al Fatih',
-  fatherName: 'Ahmad',
-  motherName: 'Aisyah',
-  familyName: 'Keluarga Bapak Ahmad',
+  childName: 'Raiyel Naki Putra',
+  fatherName: 'Rizki',
+  motherName: 'Nada',
+  familyName: 'Keluarga Bapak Rizki',
 
   // Nama default jika undangan dibuka tanpa slug, misalnya domain.com
   defaultGuestName: 'Bapak/Ibu/Saudara/i',
