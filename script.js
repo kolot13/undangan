@@ -36,7 +36,7 @@ const invitation = {
   // 4 tempat foto galeri.
   // Masukkan foto ke folder assets, lalu ganti src-nya di sini.
   photos: [
-    { src: '/assets/photo-1.svg', caption: 'Foto Pertama' },
+    { src: '/assets/WhatsApp%20Image%202026-06-02%20at%2019.35.10.jpeg', caption: 'Foto Pertama' },
     { src: '/assets/photo-2.svg', caption: 'Senyum Manis' },
     { src: '/assets/photo-3.svg', caption: 'Doa Keluarga' },
     { src: '/assets/photo-4.svg', caption: 'Hari Bahagia' }
