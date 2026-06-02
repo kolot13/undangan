@@ -2,10 +2,10 @@
 // EDIT DATA UNDANGAN DI SINI
 // ================================
 const invitation = {
-  childName: 'Muhammad Al Fatih',
-  fatherName: 'Ahmad',
-  motherName: 'Aisyah',
-  familyName: 'Keluarga Bapak Ahmad',
+  childName: 'Raiyel Naki Putra',
+  fatherName: 'Rizki',
+  motherName: 'Nada',
+  familyName: 'Naki Family',
 
   // Nama default jika undangan dibuka tanpa slug, misalnya domain.com
   defaultGuestName: 'Bapak/Ibu/Saudara/i',
@@ -21,17 +21,17 @@ const invitation = {
   coverPhoto: '/assets/photo-1.svg',
 
   // Format tanggal untuk countdown: YYYY-MM-DDTHH:mm:ss+07:00
-  eventDateISO: '2026-06-30T10:00:00+07:00',
-  eventDateText: 'Minggu, 30 Juni 2026',
+  eventDateISO: '2026-06-14T10:00:00+07:00',
+  eventDateText: 'Minggu, 14 Juni 2026',
   eventTimeText: '10.00 WIB - Selesai',
-  eventPlace: 'Rumah Keluarga Besar, Jl. Contoh Alamat No. 123, Jakarta',
+  eventPlace: 'Masjid At-Taubah, Jl. Kramat Jaya Raya No.49, RW.1, Tugu Utara, Kec. Koja, Jkt Utara, Daerah Khusus Ibukota Jakarta 14260',
 
   // Ganti dengan link Google Maps lokasi acara
-  mapUrl: 'https://maps.google.com/?q=Jakarta',
+  mapUrl: 'https://maps.app.goo.gl/aqDNCNxc9PzWbBZR8',
 
   // Ganti nomor WhatsApp tujuan RSVP. Format: 62xxxxxxxxxxx
-  whatsappNumber: '6281234567890',
-  whatsappMessage: 'Assalamu’alaikum, saya ingin konfirmasi kehadiran di acara Aqiqah Muhammad Al Fatih.',
+  whatsappNumber: '62895340938436',
+  whatsappMessage: 'Assalamu’alaikum, saya ingin konfirmasi kehadiran di acara Aqiqah Raiyel Naki Putra.',
 
   // 4 tempat foto galeri.
   // Masukkan foto ke folder assets, lalu ganti src-nya di sini.
