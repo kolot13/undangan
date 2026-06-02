@@ -2,10 +2,10 @@
 // EDIT DATA UNDANGAN DI SINI
 // ================================
 const invitation = {
-  childName: 'Raiyel Naki Putra',
-  fatherName: 'Rizki',
-  motherName: 'Nada',
-  familyName: 'Keluarga Bapak Rizki',
+  childName: 'Muhammad Al Fatih',
+  fatherName: 'Ahmad',
+  motherName: 'Aisyah',
+  familyName: 'Keluarga Bapak Ahmad',
 
   // Nama default jika undangan dibuka tanpa slug, misalnya domain.com
   defaultGuestName: 'Bapak/Ibu/Saudara/i',
@@ -15,6 +15,10 @@ const invitation = {
   guestNameOverrides: {
     'bpk-haris-dan-keluarga': 'Bpk Haris & Keluarga'
   },
+
+  // Foto utama di halaman pertama.
+  // Ganti dengan file fotomu, contoh: /assets/foto-anak-cover.jpg
+  coverPhoto: '/assets/photo-1.svg',
 
   // Format tanggal untuk countdown: YYYY-MM-DDTHH:mm:ss+07:00
   eventDateISO: '2026-06-30T10:00:00+07:00',
@@ -29,7 +33,8 @@ const invitation = {
   whatsappNumber: '6281234567890',
   whatsappMessage: 'Assalamu’alaikum, saya ingin konfirmasi kehadiran di acara Aqiqah Muhammad Al Fatih.',
 
-  // Ganti file foto di folder assets. Bisa JPG, PNG, WEBP, atau SVG.
+  // 4 tempat foto galeri.
+  // Masukkan foto ke folder assets, lalu ganti src-nya di sini.
   photos: [
     { src: '/assets/photo-1.svg', caption: 'Foto Pertama' },
     { src: '/assets/photo-2.svg', caption: 'Senyum Manis' },
@@ -43,6 +48,13 @@ function setText(id, value) {
   if (el) el.textContent = value;
 }
 
+function setImage(id, src, altText) {
+  const img = document.getElementById(id);
+  if (!img || !src) return;
+
+  img.src = src;
+  if (altText) img.alt = altText;
+}
 
 function toTitleCase(word) {
   if (!word) return '';
@@ -111,9 +123,13 @@ setText('eventDateText', invitation.eventDateText);
 setText('eventTimeText', invitation.eventTimeText);
 setText('eventPlace', invitation.eventPlace);
 
+setImage('coverPhoto', invitation.coverPhoto, `Foto utama ${invitation.childName}`);
+
 const mapButton = document.getElementById('mapButton');
 const waButton = document.getElementById('waButton');
+
 if (mapButton) mapButton.href = invitation.mapUrl;
+
 if (waButton) {
   const rsvpMessage = `${invitation.whatsappMessage}\n\nNama tamu: ${guestName}`;
   waButton.href = `https://wa.me/${invitation.whatsappNumber}?text=${encodeURIComponent(rsvpMessage)}`;
@@ -135,6 +151,7 @@ invitation.photos.forEach((photo, index) => {
 });
 
 const revealElements = document.querySelectorAll('.reveal');
+
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
