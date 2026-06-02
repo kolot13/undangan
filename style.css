@@ -632,3 +632,296 @@ main {
     right: calc(50% - 198px);
   }
 }
+/* ================================
+   FIX TOTAL MOBILE FRIENDLY
+   tempel di paling bawah style.css
+   ================================ */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 0;
+  background: #fff8ea;
+}
+
+main {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* khusus tampilan HP */
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .section {
+    width: 100%;
+    padding: 46px 16px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 28px;
+    padding-bottom: 42px;
+    justify-content: flex-start;
+  }
+
+  .hero-stickers {
+    margin-bottom: 10px;
+  }
+
+  .hero-stickers span {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    border-radius: 14px;
+  }
+
+  .cover-photo-wrap {
+    width: 105px !important;
+    height: 105px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
+    min-height: 105px !important;
+    max-height: 105px !important;
+    margin: 6px auto 12px !important;
+    padding: 6px !important;
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    flex: 0 0 auto !important;
+  }
+
+  .cover-photo-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+    display: block !important;
+  }
+
+  .badge {
+    max-width: 100%;
+    font-size: 15px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+  }
+
+  .eyebrow,
+  .section-title p {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 42px;
+    line-height: 0.98;
+    margin-bottom: 12px;
+    word-break: break-word;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+
+  .guest-card,
+  .hero-card,
+  .quote-card,
+  .detail-card {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .guest-card {
+    padding: 13px 12px;
+    margin-bottom: 14px;
+  }
+
+  .guest-card strong {
+    font-size: 30px;
+    line-height: 1.05;
+    word-break: break-word;
+  }
+
+  .hero-card {
+    padding: 18px 16px;
+    margin-bottom: 18px;
+  }
+
+  .hero-card p {
+    font-size: 14px;
+  }
+
+  .arabic {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .arabic.big {
+    font-size: 23px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    margin-bottom: 22px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 1.12;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .photo-card {
+    min-width: 0;
+    border-radius: 20px;
+    padding: 7px;
+  }
+
+  .photo-frame {
+    border-radius: 15px;
+  }
+
+  .photo-card p {
+    font-size: 12px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .detail-card {
+    padding: 18px 14px;
+  }
+
+  .countdown {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .countdown div {
+    min-width: 0;
+    padding: 11px 3px;
+    border-radius: 14px;
+  }
+
+  .countdown strong {
+    font-size: 20px;
+  }
+
+  .countdown span {
+    font-size: 10px;
+  }
+
+  .action-row {
+    grid-template-columns: 1fr;
+  }
+
+  .closing h2 {
+    font-size: 25px;
+  }
+
+  .float-item {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 14px;
+  }
+
+  .item-1 {
+    left: 8px;
+    top: 78px;
+  }
+
+  .item-2 {
+    right: 8px;
+    top: 105px;
+  }
+
+  .item-3 {
+    left: 8px;
+    bottom: 150px;
+  }
+
+  .item-4 {
+    right: 8px;
+    bottom: 175px;
+  }
+
+  .item-5 {
+    left: 26px;
+    top: 22px;
+  }
+
+  .item-6 {
+    right: 26px;
+    bottom: 50px;
+  }
+
+  .music-btn {
+    right: 14px !important;
+    bottom: 14px !important;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* HP sangat kecil */
+@media (max-width: 340px) {
+  .section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .guest-card strong {
+    font-size: 26px;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown strong {
+    font-size: 18px;
+  }
+
+  .countdown span {
+    font-size: 9px;
+  }
+}
