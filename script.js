@@ -18,7 +18,7 @@ const invitation = {
 
   // Foto utama di halaman pertama.
   // Ganti dengan file fotomu, contoh: /assets/foto-anak-cover.jpg
-  coverPhoto: '/assets/photo-1.svg',
+  coverPhoto: '/assets/WhatsApp%20Image%202026-06-02%20at%2019.35.10.jpeg',
 
   // Format tanggal untuk countdown: YYYY-MM-DDTHH:mm:ss+07:00
   eventDateISO: '2026-06-14T10:00:00+07:00',
